@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Program-Rookie"><title> · Program-Rookie</title><meta name="description" content="搭建Github+Hexo个人博客Github Page在github上新建repository，名称为{username}.github.io
+搭建步骤安装Node.jsNode.js安装简单，上官网下载即可
+有关配置见Node.js配置
+安装GitGit安装教程~亲测可行
+安装HexoNode."><meta name="keywords" content="个人博客,Blog,博客"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script src="/js/jquery.js"></script><meta name="generator" content="Hexo 5.4.0"></head><body><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">Program-Rookie</a></h3><div class="description"><p>心之所愿，无事不成。<br> Nothing is impossible to a willing heart.</p></div></div></div><ul class="social-links"><li><a target="_blank" rel="noopener" href="https://github.com/Program-Rookie"><i class="fa fa-github"></i></a></li><li><a href="jhzhang9102@163.com"><i class="fa fa-envelope"></i></a></li><li><a target="_blank" rel="noopener" href="http://sighttp.qq.com/authd?IDKEY="><i class="fa fa-qq"></i></a></li><li><a target="_blank" rel="noopener" href="https://www.zhihu.com/people/zhang-jing-hao-66-99"><i class="fa fa-mortar-board"></i></a></li></ul><div class="footer"><div class="p"> <span>© 2017 - 2020 </span><i class="fa fa-star"></i><span> Program-Rookie</span></div><div class="by_farbox"><span>Powered by </span><a href="https://hexo.io/zh-cn/" target="_blank">Hexo </a><span> & </span><a href="https://github.com/mrcore/hexo-theme-Anatole-Core" target="_blank">Anatole-Core  </a></div><div class="beian"><a href="http://www.beian.miit.gov.cn/" target="_blank">粤ICP备15011643号</a><span style="height:10px;margin-left: 10px;">|</span><img src="/images/gongan.png" style="height:10px;margin-left: 10px;position: relative;top: 1px;"><span style="margin-left: 2px;">粤公网安备 44030402003967号</span></div></div></div><div class="main"><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">首页</a></li><li><a href="/archives">归档</a></li><li><a href="/tags">标签</a></li><li><a href="/about">关于</a></li><li><a href="/guestbook">留言</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li></div></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a></a></h3></div><div class="post-content"><h1 id="搭建Github-Hexo个人博客"><a href="#搭建Github-Hexo个人博客" class="headerlink" title="搭建Github+Hexo个人博客"></a>搭建Github+Hexo个人博客</h1><h2 id="Github-Page"><a href="#Github-Page" class="headerlink" title="Github Page"></a>Github Page</h2><p>在github上新建repository，名称为{username}.github.io</p>
+<h2 id="搭建步骤"><a href="#搭建步骤" class="headerlink" title="搭建步骤"></a>搭建步骤</h2><h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><p>Node.js安装简单，上官网下载即可</p>
+<p>有关配置见<a href="./Vue%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.md">Node.js配置</a></p>
+<h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><p><a href="./Git%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B~%E4%BA%B2%E6%B5%8B%E5%8F%AF%E8%A1%8C.md">Git安装教程~亲测可行</a></p>
+<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>Node.js中带有npm命令，可以用这个命令下载Hexo:</p>
+<blockquote>
+<p>(c)npm install -g hexo-cli</p>
+</blockquote>
+<p>验证hexo安装成功:</p>
+<blockquote>
+<p>hexo -v</p>
+</blockquote>
+<h3 id="创建本地博客"><a href="#创建本地博客" class="headerlink" title="创建本地博客"></a>创建本地博客</h3><ol>
+<li>创建文件夹 blog</li>
+<li>鼠标右键 blog，选择 Git Bash Here</li>
+<li>输入hexo init</li>
+<li>输入(c)npm install 安装依赖包</li>
+<li>输入hexo g生成网页</li>
+<li>输入hexo s生成的网页就部署在了本地服务器上，可以通过浏览器输入<a href="http://localhost:4000查看">http://localhost:4000查看</a></li>
+</ol>
+<h3 id="部署到Github"><a href="#部署到Github" class="headerlink" title="部署到Github"></a>部署到Github</h3><p>上一步骤只是创建了本地博客，部署到Github需要以下步骤：</p>
+<ol>
+<li><p>github repository 复制url</p>
+</li>
+<li><p>修改博客配置文件_config.yml<br>找到<code>#Deployment</code>写入：</p>
+<p>deploy:<br>type: git<br>repository: <a target="_blank" rel="noopener" href="https://github.com/%7Busername%7D/%7Busername%7D.github.io.git">https://github.com/{username}/{username}.github.io.git</a><br>branch: master</p>
+</li>
+<li><p>回到Git Bash中，执行以下命令：</p>
+<blockquote>
+<p>npm install hexo-deployer-git –save</p>
+</blockquote>
+</li>
+<li><p>输入hexo d，若有<code>INFO Deploy done: git</code>，则表示成功部署</p>
+</li>
+</ol>
+<h3 id="使用主题"><a href="#使用主题" class="headerlink" title="使用主题"></a>使用主题</h3><p>使用主题的思路就是下载主题文件复制到主题文件夹中，并在配置文件中配置使用的主题。操作步骤：</p>
+<ol>
+<li><p>复制主题的github地址在Git Bash中输入:</p>
+<blockquote>
+<p>git clone {主题github url} themes/{主题名}</p>
+</blockquote>
+</li>
+<li><p>修改博客配置</p>
+<p>theme: 主题名<br>language: zh-CN<br>url: https://{username}.github.io</p>
+</li>
+<li><p>重新部署，在Git Bash中输入:</p>
+<p>hexo g -d</p>
+</li>
+</ol>
+<p>可以通过在浏览器中输入{username}.github.io查看自己的博客</p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a target="_blank" rel="noopener" href="https://ryanluoxu.github.io/2017/11/24/%E7%94%A8-Hexo-%E5%92%8C-GitHub-Pages-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">用 Hexo 和 GitHub Pages 搭建博客</a></p>
+</div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2021-05-18</span><i class="fa fa-tag"></i><span class="leancloud_visitors"></span></div></div></div></div><div class="share"><div class="evernote"><a class="fa fa-bookmark" href="" onclick="javascript:join_favorite()" ref="sidebar"></a></div><div class="weibo"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></div><div class="twitter"><a class="fa fa-twitter" target="_blank" rel="noopener" href="http://twitter.com/home?status=,https://program-rookie.github.io/2021/05/18/博客搭建教程~亲测/,Program-Rookie,,;"></a></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/2021/05/18/Git%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B~%E4%BA%B2%E6%B5%8B%E5%8F%AF%E8%A1%8C/" title="">上一篇</a></li></ul></div><script src="/js/visitors.js"></script><a id="comments"></a><div id="vcomments" style="margin:0 30px;"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//cdn.jsdelivr.net/gh/xcss/valine@latest/dist/Valine.min.js"></script><script>var valine = new Valine({
+  el:'#vcomments',
+  notify:false || false, 
+  verify:false|| false, 
+  app_id:'',
+  app_key:'',
+  placeholder:'念念不忘，必有回响...',
+  path: window.location.pathname,
+  serverURLs: '',
+  visitor:true,
+  recordIP:true,
+  avatar:'mp'
+})</script></div></div></div></div><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/add-bookmark.js"></script><script src="/js/baidu-tongji.js"></script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
